@@ -23,6 +23,6 @@ router
 router.route('/:thoughtId/responses').post(addThoughtResponse);
 
 // /api/Thoughts/:ThoughtId/responses/:responseId
-router.route('/:thoughtId/responses/:responseId').delete(removeThoughtResponse);
+router.route('/:thoughtId/responses/:responseId').post(addThoughtResponse).delete(removeThoughtResponse);
 
 module.exports = router;
